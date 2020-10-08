@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <title>Projeto IMD</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Rebeca.
+      </h1>
+      <nav>
+        <ul>
+          <li class="ativo"><a href="Inicio.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="Atendimento.html">Atendimento ao Cliente</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="apresentacao">
+        <div>
+          <h2>Aprenda inglês <br />sem sair de casa</h2>
+          <p>
+            Tenha aulas particulares que respeitam o seu ritmo de aprendizado e
+            evolua sua fluência no idioma<br />
+            da forma mais consistente possível
+          </p>
+          <button>
+            AGENDE UMA AULA GRÁTIS
+          </button>
+        </div>
+        <div>
+          <img
+            src="https://cdn.glitch.com/1883d670-9baf-46c8-8e11-faa7f096855a%2Fonline_lesson_.svg?v=1602143491460"
+          />
+        </div>
+      </section>
+      <section id="informacoes">
+        <div>
+          <img
+            src="https://cdn.glitch.com/1883d670-9baf-46c8-8e11-faa7f096855a%2Fconversation_.svg?v=1602143495188"
+          />
+        </div>
+        <div>
+          <h2>Aprenda de forma <br />eficiente e divertida</h2>
+          <p>
+            Aprender inglês não precisa ser algo chato e monótono. Em nossas
+            aulas, a gramática sempre será apresentada dentro de um contexto,
+            visando o uso real do idioma.
+          </p>
+          <p>
+            Além disso, a prounúncia correta sempre será reforçada para que você
+            tenha total segurança ao conversar com outras pessoas.
+          </p>
+        </div>
+      </section>
+      <section id="planos">
+        <h2>Opções de planos<br />para cada necessidade.</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Plano</th>
+              <th>Descrição</th>
+              <th>Frequência</th>
+              <th>Investimento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aprendendo do Zero</td>
+              <td>Ideal para quem está começando a aprender Inglês.</td>
+              <td>3h/semana</td>
+              <td>R$150,00/mês</td>
+            </tr>
+            <tr>
+              <td>Rumo a Fluência</td>
+              <td>Conteúdos avançados para quem já sabe bastante</td>
+              <td>1h/semana</td>
+              <td>R$50,00/mês</td>
+            </tr>
+            <tr>
+              <td>Pronto para viajar</td>
+              <td>Tudo que é necessário para viajar para o exterior</td>
+              <td>5 horas</td>
+              <td>R$80,00</td>
+            </tr>
+            <tr>
+              <td>Dúvidas Jamais</td>
+              <td>Tire suas dúvidas sobre conteúdos específicos</td>
+              <td>1 hora</td>
+              <td>R$30,00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Nenhum desses encaixa com sua necessidade?</td>
+              <td colspan="2">Entre em contato!</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+    <section id="contato">
+      <h2>Entre em contato</h2>
+      <form>
+        <div class="linha">
+          <div>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="ex:Rebeca" />
+          </div>
+
+          <div>
+            <label for="celular">Celular</label>
+            <input id="celular" type="tel" placeholder="ex:84916752891" />
+          </div>
+        </div>
+        <div class="linha">
+          <div>
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="ex:flavio.profissional1@gmail.com"
+            />
+          </div>
+
+          <div>
+            <label for="assunto">Assunto</label>
+            <select id="assunto">
+              <option selected disabled>Selecionar assunto</option>
+              <option>Dúvida</option>
+              <option>Assunto</option>
+              <option>Agendamento de aula</option>
+              <option>Outro</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="10"></textarea>
+          <button>Enviar</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
