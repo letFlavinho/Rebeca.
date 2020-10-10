@@ -1,55 +1,47 @@
 <html>
   <head>
     <title>Projeto IMD</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"rel="stylesheet"/>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>
-        Rebeca.
-      </h1>
-      <nav>
-        <ul>
-          <li class="ativo"><a href="Inicio.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="Atendimento.html">Atendimento ao Cliente</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header>
+        <h1>Rebeca.</h1>
+          <nav>
+            <ul>
+              <li class="ativo"><a href="Inicio.html">Início</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="Atendimento.html">Atendimento ao Cliente</a></li>
+            </ul>
+          </nav>
+      </header>
     <main>
-      <section id="apresentacao">
-        <div>
-          <h2>Aprenda inglês <br />sem sair de casa</h2>
-          <p>
-            Tenha aulas particulares que respeitam o seu ritmo de aprendizado e
-            evolua sua fluência no idioma<br />
-            da forma mais consistente possível
-          </p>
-          <button>
-            AGENDE UMA AULA GRÁTIS
-          </button>
-        </div>
-        <div>
-          <img
-            src="https://cdn.glitch.com/1883d670-9baf-46c8-8e11-faa7f096855a%2Fonline_lesson_.svg?v=1602143491460"
-          />
-        </div>
-      </section>
-      <section id="informacoes">
-        <div>
+       <section id="apresentacao">
+          <div class="metade">
+            <h2>Aprenda inglês <br />sem sair de casa</h2>
+            <p>
+              Tenha aulas particulares que respeitam o seu ritmo de aprendizado e
+              evolua sua fluência no idioma<br />
+              da forma mais consistente possível
+            </p>
+            <button>
+              AGENDE UMA AULA GRÁTIS
+            </button>
+          </div>
+          <div class="metade">
+            <img
+              src="https://cdn.glitch.com/1883d670-9baf-46c8-8e11-faa7f096855a%2Fonline_lesson_.svg?v=1602143491460"
+            />
+          </div>
+        </section>
+       <section id="informacoes">
+        <div class="metade">
           <img
             src="https://cdn.glitch.com/1883d670-9baf-46c8-8e11-faa7f096855a%2Fconversation_.svg?v=1602143495188"
           />
         </div>
-        <div>
+        <div class="metade">
           <h2>Aprenda de forma <br />eficiente e divertida</h2>
           <p>
             Aprender inglês não precisa ser algo chato e monótono. Em nossas
@@ -63,7 +55,7 @@
         </div>
       </section>
       <section id="planos">
-        <h2>Opções de planos<br />para cada necessidade.</h2>
+        <h2>Opções de planos<br>para cada necessidade.</h2>
         <table>
           <thead>
             <tr>
@@ -107,49 +99,57 @@
           </tfoot>
         </table>
       </section>
+   
+      <section id="contato">
+        <h2>Entre em contato</h2>
+        <form>
+          <div class="linha">
+            <div>
+              <label for="nome">Nome <span class="asterisco">*</span></label>
+              <input id="nome" 
+                     type="text" 
+                     placeholder="ex:Rebeca" required/>
+            </div>
+
+            <div>
+              <label for="celular">Celular</label>
+              <input id="celular" 
+                     type="tel" 
+                     placeholder="ex:84916752891"/>
+            </div>
+          </div>
+
+          <div class="linha">
+            <div>
+              <label for="email">E-mail</label>
+              <input id="email"
+                     type="email"
+                     placeholder="ex:flavio.profissional1@gmail.com"/>
+              </div>
+
+            <div>
+              <label for="assunto">Assunto <span class="asterisco">*</span></label>
+              <select id="assunto" required>
+                <option selected disabled>Selecionar assunto</option>
+                <option>Dúvida</option>
+                <option>Assunto</option>
+                <option>Agendamento de aula</option>
+                <option>Outro</option>
+              </select>
+          </div>
+          </div>
+
+          <div>
+              <label for="mensagem">Mensagem <span class="asterisco">*</span></label>
+              <textarea id="mensagem" rows="10" required  ></textarea>
+              
+              <div class = "linha">
+                <span><span class="asterisco">*</span>campo obrigatório</span>
+                <button>Enviar</button>
+              </div>
+          </div>
+        </form>
+      </section> 
     </main>
-    <section id="contato">
-      <h2>Entre em contato</h2>
-      <form>
-        <div class="linha">
-          <div>
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" placeholder="ex:Rebeca" />
-          </div>
-
-          <div>
-            <label for="celular">Celular</label>
-            <input id="celular" type="tel" placeholder="ex:84916752891" />
-          </div>
-        </div>
-        <div class="linha">
-          <div>
-            <label for="email">E-mail</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="ex:flavio.profissional1@gmail.com"
-            />
-          </div>
-
-          <div>
-            <label for="assunto">Assunto</label>
-            <select id="assunto">
-              <option selected disabled>Selecionar assunto</option>
-              <option>Dúvida</option>
-              <option>Assunto</option>
-              <option>Agendamento de aula</option>
-              <option>Outro</option>
-            </select>
-          </div>
-        </div>
-
-        <div>
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" rows="10"></textarea>
-          <button>Enviar</button>
-        </div>
-      </form>
-    </section>
   </body>
 </html>
