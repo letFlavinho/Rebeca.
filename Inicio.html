@@ -11,12 +11,11 @@
           <nav>
             <ul>
               <li class="ativo"><a href="Inicio.html">Início</a></li>
-              <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="Atendimento.html">Atendimento ao Cliente</a></li>
+              <li><a onclick = "abrirPainel(aberto)">Sobre</a></li>
             </ul>
           </nav>
-      </header>
-    <main>
+       </header>
+      <main>
        <section id="apresentacao">
           <div class="metade">
             <h2>Aprenda inglês <br />sem sair de casa</h2>
@@ -102,11 +101,12 @@
    
       <section id="contato">
         <h2>Entre em contato</h2>
-        <form>
+        <form method="post" action="https://formspree.io/f/moqpjgqa">
           <div class="linha">
             <div>
               <label for="nome">Nome <span class="asterisco">*</span></label>
-              <input id="nome" 
+              <input id="nome"
+                     name="Nome"
                      type="text" 
                      placeholder="ex:Rebeca" required/>
             </div>
@@ -114,6 +114,7 @@
             <div>
               <label for="celular">Celular</label>
               <input id="celular" 
+                     name="Celular"
                      type="tel" 
                      placeholder="ex:84916752891"/>
             </div>
@@ -123,13 +124,14 @@
             <div>
               <label for="email">E-mail</label>
               <input id="email"
+                     name="E-mail"
                      type="email"
                      placeholder="ex:flavio.profissional1@gmail.com"/>
               </div>
 
             <div>
               <label for="assunto">Assunto <span class="asterisco">*</span></label>
-              <select id="assunto" required>
+              <select name="Assunto" id="assunto" required >
                 <option selected disabled>Selecionar assunto</option>
                 <option>Dúvida</option>
                 <option>Assunto</option>
@@ -141,15 +143,42 @@
 
           <div>
               <label for="mensagem">Mensagem <span class="asterisco">*</span></label>
-              <textarea id="mensagem" rows="10" required  ></textarea>
+              <textarea name="Mensagem" id="mensagem" rows="10" required  ></textarea>
               
               <div class = "linha">
-                <span><span class="asterisco">*</span>campo obrigatório</span>
+                <span><span class="asterisco">*</span>  campo obrigatório</span>
                 <button>Enviar</button>
               </div>
+            </div>
+          </form>
+        </section> 
+      </main>
+     <footer>
+      <span>
+        Todos os direitos reservados &#169;
+      </span>
+     </footer>
+      <div id="painel" class="fechado">
+       <div class="conteudo">
+       <a class="fechar" onclick="">&lt; Fechar</a>
+            <h2>Sobre mim </h2>
+         <div class="perfil">
+            <img src="foto minha.png">
+              <p>
+              Sou um aluno do Instituto Metrópole Digital-UFRN
+              e esse é o primeiro site que eu fiz em toda
+              a minha vida, uma longa caminhada se aproxima
+              e conquistarei conquistas conquistadas em troca
+              de abundante trabalho árduo. Vdb gld
+              </p>
+          <div class="social">
+           <a href = "https://github.com/Flavinho1" target="_blank"><img src="iconmonstr-github-4-240.png" alt="github">
+           <a href = "https://twitter.com/flavivalf" target="_blank"><img src="iconmonstr-twitter-4-240.png" alt="twitter">
+           <a href = "https://www.linkedin.com/in/fl%C3%A1vio-bulh%C3%B5es-b4ab761b7/" target="_blank"><img src="iconmonstr-linkedin-4-240.png" alt="linkedin">
           </div>
-        </form>
-      </section> 
-    </main>
+         </div>
+      </div>
+     </div>
+            <script src="painel.js"></script>
   </body>
 </html>
