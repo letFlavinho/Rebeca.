@@ -39,7 +39,7 @@
     text-decoration: none;
     color: inherit;
   }
-  section {
+  section, footer {
   
     display: flex;
     flex-direction: row ;
@@ -142,6 +142,12 @@
     color:  #df4c73;
 
   }
+  
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   h2{
     font-size: 32px;
   }
@@ -151,4 +157,58 @@
     background-color: #df4c73;
     color: white;
   }
-  
+  #painel{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #painel.conteudo{
+    background-color: white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 5vw;
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    transition: 500ms;
+  }
+  #painel.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  #painel.perfil img{
+    border-radius: 50%;
+    width: 200px;
+  }
+  #painel.perfil p{
+    text-indent: 50px;
+    text-align: justify;
+    margin-top:30px ;
+  }
+  #painel.fechar{
+    font-weight: bold; 
+    background-color: #df4c73;
+    padding: 5px 20px 5px 10px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+    display: inline-block;
+
+  }
+  #painel.fechado{
+      opacity: 0;
+      pointer-events: none;
+  }
+  #painel.aberto{
+    opacity: 1;
+  }
+  #painel.social{
+    margin-top: 16px;
+    
+  }
+  #painel.social img{
+      width: 32px;
+  }
